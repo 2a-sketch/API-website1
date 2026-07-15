@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now | Aman Paint Industries — Rajkot, Gujarat</title>
+  <meta name="description" content="Place your order or request a quote from Aman Paint Industries. Premium industrial and decorative paints with delivery across India from Rajkot, Gujarat.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-paint"></div>
+  </div>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        AMAN <span class="logo-accent">PAINTS</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#products">Products</a>
+        <a href="order.html" class="active">Order Now</a>
+        <a href="order.html" class="btn-quote">Request a Quote</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== ORDER HERO ========== -->
+  <section class="order-hero">
+    <div class="hero-fluid"></div>
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="container" style="position:relative; z-index:3;">
+      <h1 class="reveal">Place Your <span class="highlight">Order</span></h1>
+      <p class="reveal reveal-delay-1">Get premium paints delivered across India. Fill the form below or contact us directly.</p>
+    </div>
+  </section>
+
+  <!-- ========== ORDER CONTENT ========== -->
+  <section class="order-section section-padding">
+    <div class="container">
+      <div class="order-grid">
+
+        <!-- Order Form -->
+        <div class="order-form-card reveal">
+          <h2><i class="fas fa-file-invoice" style="color:var(--accent-1);margin-right:8px;"></i> Order / Quote Request</h2>
+          <p>Fill in the details and our team will get back to you within 24 hours.</p>
+
+          <form id="orderForm" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" name="companyName" placeholder="Your company (optional)">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="productCategory">Product Category *</label>
+                <select id="productCategory" name="productCategory" required>
+                  <option value="" disabled selected>Select a product</option>
+                  <option value="industrial">Industrial Paints</option>
+                  <option value="oil-based">Oil-Based Paints</option>
+                  <option value="wall">Wall Paints</option>
+                  <option value="epoxy">Epoxy Coatings</option>
+                  <option value="primers">Primers & Base Coats</option>
+                  <option value="custom">Custom / Bulk Order</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="quantity">Quantity Required</label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g., 500 Litres">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Delivery Address</label>
+              <textarea id="address" name="address" placeholder="Full delivery address with city and pincode"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Notes</label>
+              <textarea id="message" name="message" rows="3" placeholder="Any special requirements or notes..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span><i class="fas fa-paint-roller"></i> Submit Order Request</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Map & Contact Info -->
+        <div class="reveal reveal-delay-2">
+          <div class="order-map-card">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.74397587845!2d70.6942!3d22.3039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c98ac71cdf0f%3A0x76dd15cfbe93ad3a!2sRajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Aman Paint Industries Location - Rajkot, Gujarat">
+            </iframe>
+            <div class="order-contact-info">
+              <h3><i class="fas fa-headset" style="color:var(--accent-1);margin-right:8px;"></i> Contact Us Directly</h3>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Aman Paint Industries,<br>Rajkot, Gujarat 360001, India</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <p><a href="https://wa.me/919876543210">Chat on WhatsApp</a></p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:info@amanpaints.com">info@amanpaints.com</a></p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <p>Monday – Saturday: 9:00 AM – 7:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>AMAN <span>PAINTS</span></h3>
+          <p>Premium industrial and decorative paint manufacturer based in Rajkot, Gujarat. Delivering quality coatings across India since 2008.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About Us</a>
+          <a href="index.html#products">Products</a>
+          <a href="order.html">Order Now</a>
+          <a href="order.html">Request a Quote</a>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="index.html#products">Industrial Paints</a>
+          <a href="index.html#products">Oil-Based Paints</a>
+          <a href="index.html#products">Wall Paints</a>
+          <a href="index.html#products">Epoxy Coatings</a>
+          <a href="index.html#products">Primers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+919876543210"><i class="fas fa-phone"></i> +91 98765 43210</a>
+          <a href="https://wa.me/919876543210"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+          <a href="mailto:info@amanpaints.com"><i class="fas fa-envelope"></i> info@amanpaints.com</a>
+          <a href="#"><i class="fas fa-clock"></i> Mon–Sat: 9AM – 7PM</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-location">
+          <i class="fas fa-map-marker-alt"></i>
+          Aman Paint Industries, Rajkot, Gujarat, India
+        </div>
+        <p>&copy; 2024 Aman Paint Industries. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
